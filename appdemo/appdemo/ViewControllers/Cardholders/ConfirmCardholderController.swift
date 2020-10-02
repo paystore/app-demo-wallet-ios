@@ -20,8 +20,8 @@ class ConfirmCardholderController: UIViewController {
         }
         
         let libServices = WalletApiService(authorization: Utils.getEcommerceToken(), baseUrlWallet: Utils.getBaseUrl());
-        let confirmCardholderRequest = ConfirmCardholderRequest(cardholderId: self.cardholderId.text!, activationCode: activationCode.text!);
-        libServices.confirmCardholder(confirmCardholderRequest: confirmCardholderRequest){
+        let confirmCardholderRequest = ConfirmCardholderRequest(activationCode: self.activationCode.text!);
+        libServices.confirmCardholder(cardholderId: self.cardholderId.text!, confirmCardholderRequest: confirmCardholderRequest){
             (response, failure, error) in
             if(response != nil){
                 DispatchQueue.main.async {

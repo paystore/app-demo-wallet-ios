@@ -35,7 +35,7 @@ class CreateCardholderController: UIViewController {
         libServices.createCardholder(cardholder:cardholder){
             (response, failure, error) in
             if(response != nil){
-                if let createCardholderResponse:CreateCardholderResponse = response {
+                if let createCardholderResponse:SaveCardholderResponse = response {
                     DispatchQueue.main.async {
                         let alertSuccess = Utils.alertSuccess(id:createCardholderResponse.id);
                         self.present(alertSuccess, animated: true)

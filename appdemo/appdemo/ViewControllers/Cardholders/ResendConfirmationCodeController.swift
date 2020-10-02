@@ -16,7 +16,10 @@ class ResendConfirmationCodeController: UIViewController {
             return;
         }
         let libServices = WalletApiService(authorization: Utils.getEcommerceToken(), baseUrlWallet: Utils.getBaseUrl());
-        libServices.resendConfirmationCode(cardholderId: self.cardholderId.text!){
+        
+        let resendConfirmationCodeRequest = ResendConfirmationCodeRequest(cardholderId: self.cardholderId.text!);
+        
+        libServices.resendConfirmationCode(resendConfirmationCodeRequest:resendConfirmationCodeRequest){
             (response, failure, error) in
             if(response != nil){
                 DispatchQueue.main.async {

@@ -25,12 +25,12 @@ class RecoverCardholderController: UIViewController {
         
         let revalidateCardholder = RevalidateCardholderRequestDTO(cellphoneNumber: self.cellphoneNumber.text!, notificationToken:notificationToken);
         
-        libServices.recoverCardholder(nationalId:self.nationalId.text!, revalidateCardholderRequest: revalidateCardholder){
+        libServices.revalidateCardholder(nationalId:self.nationalId.text!, revalidateCardholderRequest: revalidateCardholder){
             (response, failure, error) in
             if(response != nil){
-                if let recoverCardholderResponse:RecoverCardholderResponse = response {
+                if let revalidateCardholderResponse:SaveCardholderResponse = response {
                     DispatchQueue.main.async {
-                        let alertSuccess = Utils.alertSuccess(id:recoverCardholderResponse.id);
+                        let alertSuccess = Utils.alertSuccess(id:revalidateCardholderResponse.id);
                         self.present(alertSuccess, animated: true)
                     }
                 }
