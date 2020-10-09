@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B851595E3E3A3DCB2E3DCE2 /* Pods_appdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAF930FCA92794C38CE4274 /* Pods_appdemo.framework */; };
+		47141C302530EC4B00F8366D /* PaymentQRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47141C2B2530EC4B00F8366D /* PaymentQRCodeController.swift */; };
+		47141C312530EC4B00F8366D /* ConsultPaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47141C2C2530EC4B00F8366D /* ConsultPaymentsController.swift */; };
+		47141C322530EC4B00F8366D /* ListPaymentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47141C2D2530EC4B00F8366D /* ListPaymentsCell.swift */; };
+		47141C332530EC4B00F8366D /* ListPaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47141C2E2530EC4B00F8366D /* ListPaymentController.swift */; };
+		47141C342530EC4B00F8366D /* PaymentDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47141C2F2530EC4B00F8366D /* PaymentDetailsController.swift */; };
 		475FB27324EAD01E00A35C0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 475FB27224EAD01E00A35C0F /* GoogleService-Info.plist */; };
 		5E0212E624EC295200751BE3 /* ListCardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0212E524EC295200751BE3 /* ListCardsController.swift */; };
 		5E0292B924E2F07C00921A33 /* CardholderMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0292B824E2F07C00921A33 /* CardholderMenuController.swift */; };
@@ -15,16 +21,8 @@
 		5E31B1AF24E6BED30035CE6B /* CardMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E31B1AE24E6BED30035CE6B /* CardMenuController.swift */; };
 		5E31B1B124E6BEE40035CE6B /* PaymentMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E31B1B024E6BEE40035CE6B /* PaymentMenuController.swift */; };
 		5E50657B24F9583F00425B11 /* ModalScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E50657A24F9583F00425B11 /* ModalScreen.storyboard */; };
-		5E5E43AF252FA61C00F04A09 /* libwallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5E43AE252FA61C00F04A09 /* libwallet.framework */; };
-		5E5E43B0252FA61C00F04A09 /* libwallet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5E43AE252FA61C00F04A09 /* libwallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E76B97924E33550003F9EC4 /* CreateCardHolderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76B97824E33550003F9EC4 /* CreateCardHolderController.swift */; };
-		5E784EC6252D13B1009518C8 /* PaymentQRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E784EC5252D13B1009518C8 /* PaymentQRCodeController.swift */; };
 		5E7DB7FA24F68EAF005C9EE6 /* ConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DB7F924F68EAF005C9EE6 /* ConfigController.swift */; };
-		5E8438B2252BC457004A4F40 /* ListPaymentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8438AF252BC457004A4F40 /* ListPaymentsCell.swift */; };
-		5E8438B3252BC457004A4F40 /* ConsultPaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8438B0252BC457004A4F40 /* ConsultPaymentsController.swift */; };
-		5E8438B4252BC457004A4F40 /* PaymentDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8438B1252BC457004A4F40 /* PaymentDetailsController.swift */; };
-		5E8438B6252BC563004A4F40 /* ListPaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8438B5252BC563004A4F40 /* ListPaymentController.swift */; };
-		5E85E7E4252C99A300BA6F9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E85E7E3252C99A300BA6F9D /* Main.storyboard */; };
 		5E8BEA7624E4232000DA5B45 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BEA7524E4232000DA5B45 /* Utils.swift */; };
 		5E8BEA7824E4320000DA5B45 /* ConfirmCardholderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BEA7724E4320000DA5B45 /* ConfirmCardholderController.swift */; };
 		5E8BEA7A24E4363900DA5B45 /* RecoverCardholderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BEA7924E4363900DA5B45 /* RecoverCardholderController.swift */; };
@@ -44,6 +42,7 @@
 		5EBA51CD24F83E8400154E79 /* ReadQRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA51CC24F83E8400154E79 /* ReadQRCodeController.swift */; };
 		5EDEDFC224C112F900987628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEDFC124C112F900987628 /* AppDelegate.swift */; };
 		5EDEDFC424C112F900987628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEDFC324C112F900987628 /* ViewController.swift */; };
+		5EDEDFC724C112F900987628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDEDFC524C112F900987628 /* Main.storyboard */; };
 		5EDEDFC924C112FA00987628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDEDFC824C112FA00987628 /* Assets.xcassets */; };
 		5EDEDFCC24C112FA00987628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDEDFCA24C112FA00987628 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -55,7 +54,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5E5E43B0252FA61C00F04A09 /* libwallet.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +61,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		47141C2B2530EC4B00F8366D /* PaymentQRCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentQRCodeController.swift; sourceTree = "<group>"; };
+		47141C2C2530EC4B00F8366D /* ConsultPaymentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultPaymentsController.swift; sourceTree = "<group>"; };
+		47141C2D2530EC4B00F8366D /* ListPaymentsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPaymentsCell.swift; sourceTree = "<group>"; };
+		47141C2E2530EC4B00F8366D /* ListPaymentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPaymentController.swift; sourceTree = "<group>"; };
+		47141C2F2530EC4B00F8366D /* PaymentDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentDetailsController.swift; sourceTree = "<group>"; };
 		475FB27224EAD01E00A35C0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		53694D908BFC240628DF9D7C /* Pods-appdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appdemo.debug.xcconfig"; path = "Target Support Files/Pods-appdemo/Pods-appdemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5E0212E524EC295200751BE3 /* ListCardsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardsController.swift; sourceTree = "<group>"; };
@@ -73,15 +76,8 @@
 		5E31B1AE24E6BED30035CE6B /* CardMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenuController.swift; sourceTree = "<group>"; };
 		5E31B1B024E6BEE40035CE6B /* PaymentMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMenuController.swift; sourceTree = "<group>"; };
 		5E50657A24F9583F00425B11 /* ModalScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ModalScreen.storyboard; sourceTree = "<group>"; };
-		5E5E43AE252FA61C00F04A09 /* libwallet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwallet.framework; sourceTree = "<group>"; };
 		5E76B97824E33550003F9EC4 /* CreateCardHolderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardHolderController.swift; sourceTree = "<group>"; };
-		5E784EC5252D13B1009518C8 /* PaymentQRCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentQRCodeController.swift; sourceTree = "<group>"; };
 		5E7DB7F924F68EAF005C9EE6 /* ConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigController.swift; sourceTree = "<group>"; };
-		5E8438AF252BC457004A4F40 /* ListPaymentsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPaymentsCell.swift; sourceTree = "<group>"; };
-		5E8438B0252BC457004A4F40 /* ConsultPaymentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultPaymentsController.swift; sourceTree = "<group>"; };
-		5E8438B1252BC457004A4F40 /* PaymentDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentDetailsController.swift; sourceTree = "<group>"; };
-		5E8438B5252BC563004A4F40 /* ListPaymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPaymentController.swift; sourceTree = "<group>"; };
-		5E85E7E3252C99A300BA6F9D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5E8BEA7524E4232000DA5B45 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5E8BEA7724E4320000DA5B45 /* ConfirmCardholderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCardholderController.swift; sourceTree = "<group>"; };
 		5E8BEA7924E4363900DA5B45 /* RecoverCardholderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverCardholderController.swift; sourceTree = "<group>"; };
@@ -102,6 +98,7 @@
 		5EDEDFBE24C112F900987628 /* appdemowalletios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appdemowalletios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDEDFC124C112F900987628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EDEDFC324C112F900987628 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5EDEDFC624C112F900987628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EDEDFC824C112FA00987628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EDEDFCB24C112FA00987628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EDEDFCD24C112FA00987628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5E43AF252FA61C00F04A09 /* libwallet.framework in Frameworks */,
+				2B851595E3E3A3DCB2E3DCE2 /* Pods_appdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,14 +152,14 @@
 		5E032A8924EDB58A0017294B /* Payments */ = {
 			isa = PBXGroup;
 			children = (
-				5E8438B0252BC457004A4F40 /* ConsultPaymentsController.swift */,
-				5E8438AF252BC457004A4F40 /* ListPaymentsCell.swift */,
-				5E8438B1252BC457004A4F40 /* PaymentDetailsController.swift */,
+				47141C2C2530EC4B00F8366D /* ConsultPaymentsController.swift */,
+				47141C2E2530EC4B00F8366D /* ListPaymentController.swift */,
+				47141C2D2530EC4B00F8366D /* ListPaymentsCell.swift */,
+				47141C2F2530EC4B00F8366D /* PaymentDetailsController.swift */,
+				47141C2B2530EC4B00F8366D /* PaymentQRCodeController.swift */,
 				5E31B1B024E6BEE40035CE6B /* PaymentMenuController.swift */,
 				5EBA51CC24F83E8400154E79 /* ReadQRCodeController.swift */,
-				5E784EC5252D13B1009518C8 /* PaymentQRCodeController.swift */,
 				5E92289D24FE860E00385B59 /* QRCodeDetails.swift */,
-				5E8438B5252BC563004A4F40 /* ListPaymentController.swift */,
 			);
 			path = Payments;
 			sourceTree = "<group>";
@@ -183,7 +180,6 @@
 		5EDEDFB524C112F900987628 = {
 			isa = PBXGroup;
 			children = (
-				5E5E43AE252FA61C00F04A09 /* libwallet.framework */,
 				5EDEDFC024C112F900987628 /* appdemo */,
 				5EDEDFBF24C112F900987628 /* Products */,
 				FBE34C387EE35752A23D33CF /* Pods */,
@@ -208,7 +204,7 @@
 				5EDEDFC324C112F900987628 /* ViewController.swift */,
 				5E8BEA7524E4232000DA5B45 /* Utils.swift */,
 				5EA11FFC24F6E1BB001D6AA3 /* AppConfig.swift */,
-				5E85E7E3252C99A300BA6F9D /* Main.storyboard */,
+				5EDEDFC524C112F900987628 /* Main.storyboard */,
 				5E50657A24F9583F00425B11 /* ModalScreen.storyboard */,
 				5EDEDFC824C112FA00987628 /* Assets.xcassets */,
 				5EDEDFCA24C112FA00987628 /* LaunchScreen.storyboard */,
@@ -246,6 +242,7 @@
 				5EDEDFBA24C112F900987628 /* Sources */,
 				5EDEDFBB24C112F900987628 /* Frameworks */,
 				5EDEDFBC24C112F900987628 /* Resources */,
+				B42DA5C356D6796015DD97AE /* [CP] Embed Pods Frameworks */,
 				5E1640442518D9D300C341A7 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -303,7 +300,7 @@
 				5EDEDFCC24C112FA00987628 /* LaunchScreen.storyboard in Resources */,
 				5EDEDFC924C112FA00987628 /* Assets.xcassets in Resources */,
 				5E50657B24F9583F00425B11 /* ModalScreen.storyboard in Resources */,
-				5E85E7E4252C99A300BA6F9D /* Main.storyboard in Resources */,
+				5EDEDFC724C112F900987628 /* Main.storyboard in Resources */,
 				475FB27324EAD01E00A35C0F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +330,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B42DA5C356D6796015DD97AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-appdemo/Pods-appdemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-appdemo/Pods-appdemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-appdemo/Pods-appdemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -341,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E8EA5EC24E580D500D459F0 /* GetCardsController.swift in Sources */,
+				47141C342530EC4B00F8366D /* PaymentDetailsController.swift in Sources */,
 				5EA11FFD24F6E1BB001D6AA3 /* AppConfig.swift in Sources */,
 				5E8EA5E824E57DE800D459F0 /* SetPreferredCardController.swift in Sources */,
 				5EBA51CD24F83E8400154E79 /* ReadQRCodeController.swift in Sources */,
@@ -349,12 +364,12 @@
 				5E8BEA7624E4232000DA5B45 /* Utils.swift in Sources */,
 				5E032A8624ED5E270017294B /* ListCardsCell.swift in Sources */,
 				5E0212E624EC295200751BE3 /* ListCardsController.swift in Sources */,
-				5E8438B4252BC457004A4F40 /* PaymentDetailsController.swift in Sources */,
 				5EDEDFC424C112F900987628 /* ViewController.swift in Sources */,
-				5E8438B3252BC457004A4F40 /* ConsultPaymentsController.swift in Sources */,
-				5E8438B2252BC457004A4F40 /* ListPaymentsCell.swift in Sources */,
+				47141C312530EC4B00F8366D /* ConsultPaymentsController.swift in Sources */,
 				5E31B1AF24E6BED30035CE6B /* CardMenuController.swift in Sources */,
+				47141C322530EC4B00F8366D /* ListPaymentsCell.swift in Sources */,
 				5E032A8D24EDC5D50017294B /* CardDetailsController.swift in Sources */,
+				47141C302530EC4B00F8366D /* PaymentQRCodeController.swift in Sources */,
 				5E8BEA7C24E436E800DA5B45 /* RemoveCardholderController.swift in Sources */,
 				5E92289E24FE860E00385B59 /* QRCodeDetails.swift in Sources */,
 				5E99526624EAB4EA00EE5C5A /* SuccessAlertController.swift in Sources */,
@@ -364,13 +379,12 @@
 				5E8EA5E624E57DC600D459F0 /* RemoveCardController.swift in Sources */,
 				5E0292B924E2F07C00921A33 /* CardholderMenuController.swift in Sources */,
 				5E8BEA7A24E4363900DA5B45 /* RecoverCardholderController.swift in Sources */,
-				5E784EC6252D13B1009518C8 /* PaymentQRCodeController.swift in Sources */,
 				5E8EA5EE24E580F800D459F0 /* DeactivateCardController.swift in Sources */,
 				5E7DB7FA24F68EAF005C9EE6 /* ConfigController.swift in Sources */,
 				5E8EA5E424E57A6100D459F0 /* SaveCardController.swift in Sources */,
 				5E76B97924E33550003F9EC4 /* CreateCardHolderController.swift in Sources */,
 				5E8BEA7824E4320000DA5B45 /* ConfirmCardholderController.swift in Sources */,
-				5E8438B6252BC563004A4F40 /* ListPaymentController.swift in Sources */,
+				47141C332530EC4B00F8366D /* ListPaymentController.swift in Sources */,
 				5EDEDFC224C112F900987628 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +392,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		5EDEDFC524C112F900987628 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EDEDFC624C112F900987628 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		5EDEDFCA24C112FA00987628 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -521,7 +543,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_ENTITLEMENTS = appdemo/appdemowalletios.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z243R8VR53;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
