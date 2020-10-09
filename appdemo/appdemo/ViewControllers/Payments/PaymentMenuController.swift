@@ -3,8 +3,8 @@ import UIKit
 
 class PaymentMenuController: UITableViewController {
     
-    var options:[String] = ["Ler informações do QR Code"];
-    var forms = ["readQRCode"];
+    var options:[String] = ["Ler informações do QR Code", "Pagar com QRCode", "Listar pagamentos"];
+    var forms = ["readQRCode", "paymentQRCode", "consultPayment"];
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {
