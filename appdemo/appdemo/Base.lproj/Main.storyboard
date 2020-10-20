@@ -1993,9 +1993,6 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="cardId:" destination="Fgo-6J-6Gv" eventType="editingDidEnd" id="6iv-sm-aHZ"/>
-                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificador do portador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogZ-rc-vY2">
                                                 <rect key="frame" x="10" y="325" width="192" height="21"/>
@@ -2125,7 +2122,7 @@
                     <size key="freeformSize" width="375" height="865"/>
                     <connections>
                         <outlet property="appTransactionId" destination="Yn0-ib-kFt" id="m7l-oA-1ep"/>
-                        <outlet property="cardId" destination="RMC-Sk-827" id="9he-yC-Ab6"/>
+                        <outlet property="cardId" destination="RMC-Sk-827" id="yPm-Nm-kaJ"/>
                         <outlet property="cardholderId" destination="N6u-8V-TFU" id="ugb-W3-EsW"/>
                         <outlet property="cvv" destination="1Yy-zF-hlV" id="ICi-Sy-duy"/>
                         <outlet property="ip" destination="xgP-Ca-YaY" id="Njt-Vn-tUX"/>
