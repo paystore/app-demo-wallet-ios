@@ -5,29 +5,31 @@ import libwallet
 class PaymentQRCodeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
+        qrcodeData?.text = self.qrcodeString;
     }
-    @IBOutlet weak var qrcodeData: UITextField!
+    
+    var qrcodeString = String();
+    
+    @IBOutlet weak var qrcodeData: UILabel!
     @IBOutlet weak var cardId: UITextField!
     @IBOutlet weak var cardholderId: UITextField!
     @IBOutlet weak var appTransactionId: UITextField!
     @IBOutlet weak var cvv: UITextField!
-    @IBOutlet weak var paymentIdentifier: UITextField!
     @IBOutlet weak var ip: UITextField!
     
-
+    
     
     @IBAction func createPayment(_ sender: Any) {
-            guard
-                !self.qrcodeData.text!.isEmpty,
-                !self.cardholderId.text!.isEmpty,
-                !self.appTransactionId.text!.isEmpty,
-                !self.paymentIdentifier.text!.isEmpty,
-                !self.ip.text!.isEmpty
+        guard
+            !self.qrcodeData.text!.isEmpty,
+            !self.cardholderId.text!.isEmpty,
+            !self.appTransactionId.text!.isEmpty,
+            !self.ip.text!.isEmpty
             else {
                 let alert = Utils.getAlert(title: "Erro", message: "Campos obrigatórios não preenchidos");
                 present(alert, animated: true, completion: nil);
                 return
-            }
+        }
         
         let createPaymentRequest = CreatePaymentRequest(
             appTransactionId:self.appTransactionId.text!,
@@ -35,8 +37,7 @@ class PaymentQRCodeController: UIViewController {
             cardId:self.cardId.text!,
             cvv:self.cvv.text ?? nil,
             cardholderId:self.cardholderId.text!,
-            ip:self.ip.text!,
-            paymentIdentifier:self.paymentIdentifier.text!
+            ip:self.ip.text!
         );
         
         let libServices = WalletApiService(authorization: Utils.getEcommerceToken(), baseUrlWallet: Utils.getBaseUrl());
@@ -70,7 +71,6 @@ class PaymentQRCodeController: UIViewController {
                 }
             }
         };
-        
     }
     
     @IBAction func getIp(_ sender: Any) {
@@ -80,10 +80,10 @@ class PaymentQRCodeController: UIViewController {
         request.httpMethod = "GET"
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-           
+            
             if let data = data {
                 if let response = response as? HTTPURLResponse{
-                        //Resposta de Sucesso
+                    //Resposta de Sucesso
                     if((200...299) ~= response.statusCode){
                         let ip = String(data: data, encoding: .utf8);
                         DispatchQueue.main.async {
@@ -107,4 +107,5 @@ class PaymentQRCodeController: UIViewController {
         //Aciona a tarefa
         task.resume();
     }
+    
 }

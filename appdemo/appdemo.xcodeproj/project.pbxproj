@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B851595E3E3A3DCB2E3DCE2 /* Pods_appdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAF930FCA92794C38CE4274 /* Pods_appdemo.framework */; };
 		47141C302530EC4B00F8366D /* PaymentQRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47141C2B2530EC4B00F8366D /* PaymentQRCodeController.swift */; };
 		47141C312530EC4B00F8366D /* ConsultPaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47141C2C2530EC4B00F8366D /* ConsultPaymentsController.swift */; };
 		47141C322530EC4B00F8366D /* ListPaymentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47141C2D2530EC4B00F8366D /* ListPaymentsCell.swift */; };
@@ -20,9 +19,10 @@
 		5E032A8D24EDC5D50017294B /* CardDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E032A8C24EDC5D50017294B /* CardDetailsController.swift */; };
 		5E31B1AF24E6BED30035CE6B /* CardMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E31B1AE24E6BED30035CE6B /* CardMenuController.swift */; };
 		5E31B1B124E6BEE40035CE6B /* PaymentMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E31B1B024E6BEE40035CE6B /* PaymentMenuController.swift */; };
-		5E50657B24F9583F00425B11 /* ModalScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E50657A24F9583F00425B11 /* ModalScreen.storyboard */; };
 		5E76B97924E33550003F9EC4 /* CreateCardHolderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76B97824E33550003F9EC4 /* CreateCardHolderController.swift */; };
 		5E7DB7FA24F68EAF005C9EE6 /* ConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DB7F924F68EAF005C9EE6 /* ConfigController.swift */; };
+		5E863627253DD31600E20DE2 /* ModalScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E863626253DD31600E20DE2 /* ModalScreen.storyboard */; };
+		5E86362A253DD32400E20DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E863628253DD32400E20DE2 /* Main.storyboard */; };
 		5E8BEA7624E4232000DA5B45 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BEA7524E4232000DA5B45 /* Utils.swift */; };
 		5E8BEA7824E4320000DA5B45 /* ConfirmCardholderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BEA7724E4320000DA5B45 /* ConfirmCardholderController.swift */; };
 		5E8BEA7A24E4363900DA5B45 /* RecoverCardholderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8BEA7924E4363900DA5B45 /* RecoverCardholderController.swift */; };
@@ -38,11 +38,13 @@
 		5E92289E24FE860E00385B59 /* QRCodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E92289D24FE860E00385B59 /* QRCodeDetails.swift */; };
 		5E99526624EAB4EA00EE5C5A /* SuccessAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E99526524EAB4EA00EE5C5A /* SuccessAlertController.swift */; };
 		5E99526B24EAFB0300EE5C5A /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E99526824EAFB0300EE5C5A /* ErrorViewController.swift */; };
+		5E9F5305253E1EEE0051F485 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F5304253E1EEE0051F485 /* QRScannerViewController.swift */; };
+		5E9F530B253E1F950051F485 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F5309253E1F950051F485 /* QRScannerView.swift */; };
+		5E9F530C253E1F950051F485 /* QRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F530A253E1F950051F485 /* QRData.swift */; };
 		5EA11FFD24F6E1BB001D6AA3 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA11FFC24F6E1BB001D6AA3 /* AppConfig.swift */; };
 		5EBA51CD24F83E8400154E79 /* ReadQRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA51CC24F83E8400154E79 /* ReadQRCodeController.swift */; };
 		5EDEDFC224C112F900987628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEDFC124C112F900987628 /* AppDelegate.swift */; };
 		5EDEDFC424C112F900987628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDEDFC324C112F900987628 /* ViewController.swift */; };
-		5EDEDFC724C112F900987628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDEDFC524C112F900987628 /* Main.storyboard */; };
 		5EDEDFC924C112FA00987628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDEDFC824C112FA00987628 /* Assets.xcassets */; };
 		5EDEDFCC24C112FA00987628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDEDFCA24C112FA00987628 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -75,9 +77,10 @@
 		5E066C7224FE891F003D6FDB /* appdemowalletios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = appdemowalletios.entitlements; sourceTree = "<group>"; };
 		5E31B1AE24E6BED30035CE6B /* CardMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMenuController.swift; sourceTree = "<group>"; };
 		5E31B1B024E6BEE40035CE6B /* PaymentMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMenuController.swift; sourceTree = "<group>"; };
-		5E50657A24F9583F00425B11 /* ModalScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ModalScreen.storyboard; sourceTree = "<group>"; };
 		5E76B97824E33550003F9EC4 /* CreateCardHolderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardHolderController.swift; sourceTree = "<group>"; };
 		5E7DB7F924F68EAF005C9EE6 /* ConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigController.swift; sourceTree = "<group>"; };
+		5E863626253DD31600E20DE2 /* ModalScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ModalScreen.storyboard; sourceTree = "<group>"; };
+		5E863629253DD32400E20DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E8BEA7524E4232000DA5B45 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5E8BEA7724E4320000DA5B45 /* ConfirmCardholderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCardholderController.swift; sourceTree = "<group>"; };
 		5E8BEA7924E4363900DA5B45 /* RecoverCardholderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverCardholderController.swift; sourceTree = "<group>"; };
@@ -93,12 +96,14 @@
 		5E92289D24FE860E00385B59 /* QRCodeDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeDetails.swift; sourceTree = "<group>"; };
 		5E99526524EAB4EA00EE5C5A /* SuccessAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessAlertController.swift; sourceTree = "<group>"; };
 		5E99526824EAFB0300EE5C5A /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		5E9F5304253E1EEE0051F485 /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		5E9F5309253E1F950051F485 /* QRScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		5E9F530A253E1F950051F485 /* QRData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRData.swift; sourceTree = "<group>"; };
 		5EA11FFC24F6E1BB001D6AA3 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		5EBA51CC24F83E8400154E79 /* ReadQRCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadQRCodeController.swift; sourceTree = "<group>"; };
 		5EDEDFBE24C112F900987628 /* appdemowalletios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appdemowalletios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDEDFC124C112F900987628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EDEDFC324C112F900987628 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5EDEDFC624C112F900987628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EDEDFC824C112FA00987628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EDEDFCB24C112FA00987628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EDEDFCD24C112FA00987628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,7 +116,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B851595E3E3A3DCB2E3DCE2 /* Pods_appdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +156,7 @@
 		5E032A8924EDB58A0017294B /* Payments */ = {
 			isa = PBXGroup;
 			children = (
+				5E9F5306253E1F320051F485 /* QRCode */,
 				47141C2C2530EC4B00F8366D /* ConsultPaymentsController.swift */,
 				47141C2E2530EC4B00F8366D /* ListPaymentController.swift */,
 				47141C2D2530EC4B00F8366D /* ListPaymentsCell.swift */,
@@ -175,6 +180,16 @@
 				5E7DB7F924F68EAF005C9EE6 /* ConfigController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5E9F5306253E1F320051F485 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				5E9F530A253E1F950051F485 /* QRData.swift */,
+				5E9F5309253E1F950051F485 /* QRScannerView.swift */,
+				5E9F5304253E1EEE0051F485 /* QRScannerViewController.swift */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 		5EDEDFB524C112F900987628 = {
@@ -204,8 +219,8 @@
 				5EDEDFC324C112F900987628 /* ViewController.swift */,
 				5E8BEA7524E4232000DA5B45 /* Utils.swift */,
 				5EA11FFC24F6E1BB001D6AA3 /* AppConfig.swift */,
-				5EDEDFC524C112F900987628 /* Main.storyboard */,
-				5E50657A24F9583F00425B11 /* ModalScreen.storyboard */,
+				5E863628253DD32400E20DE2 /* Main.storyboard */,
+				5E863626253DD31600E20DE2 /* ModalScreen.storyboard */,
 				5EDEDFC824C112FA00987628 /* Assets.xcassets */,
 				5EDEDFCA24C112FA00987628 /* LaunchScreen.storyboard */,
 				5EDEDFCD24C112FA00987628 /* Info.plist */,
@@ -242,7 +257,6 @@
 				5EDEDFBA24C112F900987628 /* Sources */,
 				5EDEDFBB24C112F900987628 /* Frameworks */,
 				5EDEDFBC24C112F900987628 /* Resources */,
-				B42DA5C356D6796015DD97AE /* [CP] Embed Pods Frameworks */,
 				5E1640442518D9D300C341A7 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -298,9 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EDEDFCC24C112FA00987628 /* LaunchScreen.storyboard in Resources */,
+				5E86362A253DD32400E20DE2 /* Main.storyboard in Resources */,
 				5EDEDFC924C112FA00987628 /* Assets.xcassets in Resources */,
-				5E50657B24F9583F00425B11 /* ModalScreen.storyboard in Resources */,
-				5EDEDFC724C112F900987628 /* Main.storyboard in Resources */,
+				5E863627253DD31600E20DE2 /* ModalScreen.storyboard in Resources */,
 				475FB27324EAD01E00A35C0F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,23 +344,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B42DA5C356D6796015DD97AE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-appdemo/Pods-appdemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-appdemo/Pods-appdemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-appdemo/Pods-appdemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -358,6 +355,7 @@
 				47141C342530EC4B00F8366D /* PaymentDetailsController.swift in Sources */,
 				5EA11FFD24F6E1BB001D6AA3 /* AppConfig.swift in Sources */,
 				5E8EA5E824E57DE800D459F0 /* SetPreferredCardController.swift in Sources */,
+				5E9F530C253E1F950051F485 /* QRData.swift in Sources */,
 				5EBA51CD24F83E8400154E79 /* ReadQRCodeController.swift in Sources */,
 				5E8BEA7E24E437B000DA5B45 /* ResendConfirmationCodeController.swift in Sources */,
 				5E99526B24EAFB0300EE5C5A /* ErrorViewController.swift in Sources */,
@@ -370,6 +368,7 @@
 				47141C322530EC4B00F8366D /* ListPaymentsCell.swift in Sources */,
 				5E032A8D24EDC5D50017294B /* CardDetailsController.swift in Sources */,
 				47141C302530EC4B00F8366D /* PaymentQRCodeController.swift in Sources */,
+				5E9F530B253E1F950051F485 /* QRScannerView.swift in Sources */,
 				5E8BEA7C24E436E800DA5B45 /* RemoveCardholderController.swift in Sources */,
 				5E92289E24FE860E00385B59 /* QRCodeDetails.swift in Sources */,
 				5E99526624EAB4EA00EE5C5A /* SuccessAlertController.swift in Sources */,
@@ -377,6 +376,7 @@
 				5E8EA5EA24E580C700D459F0 /* GetCardController.swift in Sources */,
 				5E31B1B124E6BEE40035CE6B /* PaymentMenuController.swift in Sources */,
 				5E8EA5E624E57DC600D459F0 /* RemoveCardController.swift in Sources */,
+				5E9F5305253E1EEE0051F485 /* QRScannerViewController.swift in Sources */,
 				5E0292B924E2F07C00921A33 /* CardholderMenuController.swift in Sources */,
 				5E8BEA7A24E4363900DA5B45 /* RecoverCardholderController.swift in Sources */,
 				5E8EA5EE24E580F800D459F0 /* DeactivateCardController.swift in Sources */,
@@ -392,10 +392,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5EDEDFC524C112F900987628 /* Main.storyboard */ = {
+		5E863628253DD32400E20DE2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5EDEDFC624C112F900987628 /* Base */,
+				5E863629253DD32400E20DE2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
