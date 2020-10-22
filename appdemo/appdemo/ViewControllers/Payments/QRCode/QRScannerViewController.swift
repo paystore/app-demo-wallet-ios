@@ -21,10 +21,12 @@ class QRScannerViewController: UIViewController {
         }
     }
     
+    var nextView = String();
+    
     var qrData: QRData? = nil {
         didSet {
             if qrData != nil {
-                self.performSegue(withIdentifier: "payment", sender: self)
+                self.performSegue(withIdentifier: nextView, sender: self)
             }
         }
     }
@@ -78,6 +80,8 @@ extension QRScannerViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "payment", let viewController = segue.destination as? PaymentQRCodeController {
             viewController.qrcodeString = (self.qrData?.codeString)!
+        }else if segue.identifier == "readQRCode", let viewController = segue.destination as? ReadQRCodeController {
+            viewController.qrcodeDataString = (self.qrData?.codeString)!
         }
     }
 }

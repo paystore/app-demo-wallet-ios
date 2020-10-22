@@ -4,8 +4,8 @@ import UIKit
 class PaymentMenuController: UITableViewController {
     
     var options:[String] = ["Ler informações do QR Code", "Pagar com QRCode", "Listar pagamentos"];
-    var forms = ["readQRCode", "paymentQRCode", "consultPayment"];
-    
+    var forms = ["QRCodeScanner", "QRCodeScanner", "consultPayment"];
+    var nextView = String();
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
@@ -23,9 +23,20 @@ class PaymentMenuController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if(indexPath.row == 0){
+            self.nextView = "readQRCode"
+        }else if(indexPath.row == 1){
+            self.nextView = "payment";
+        }
         performSegue(withIdentifier: forms[indexPath.row], sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "QRCodeScanner", let viewController = segue.destination as? QRScannerViewController {
+            viewController.nextView = self.nextView;
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
