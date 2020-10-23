@@ -5,7 +5,6 @@ class ListPaymentsCell: UITableViewCell {
 
     var appTransactionId:String?;
     var paymentId:String?;
-    var merchantPaymentId:String?;
     var cardId:String?;
 
     var appTransactionIdLabel: UILabel = {
@@ -30,17 +29,6 @@ class ListPaymentsCell: UITableViewCell {
         return textView;
     }();
     
-    var merchantPaymentIdLabel: UILabel = {
-        var textView = UILabel();
-        textView.translatesAutoresizingMaskIntoConstraints = false;
-        return textView;
-    }();
-    var merchantPaymentIdValue: UILabel = {
-        var textView = UILabel();
-        textView.translatesAutoresizingMaskIntoConstraints = false;
-        return textView;
-    }();
-    
     var cardIdLabel: UILabel = {
         var textView = UILabel();
         textView.translatesAutoresizingMaskIntoConstraints = false;
@@ -58,9 +46,6 @@ class ListPaymentsCell: UITableViewCell {
         
         self.addSubview(paymentIdLabel);
         self.addSubview(paymentIdValue);
-        
-        self.addSubview(merchantPaymentIdLabel);
-        self.addSubview(merchantPaymentIdValue);
         
         self.addSubview(cardIdLabel);
         self.addSubview(cardIdValue);
@@ -81,21 +66,13 @@ class ListPaymentsCell: UITableViewCell {
         paymentIdValue.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true;
         paymentIdValue.topAnchor.constraint(equalTo: self.topAnchor, constant:35).isActive = true;
         
-        merchantPaymentIdLabel.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true;
-        merchantPaymentIdLabel.widthAnchor.constraint(equalTo: self.heightAnchor).isActive = true;
-        merchantPaymentIdLabel.topAnchor.constraint(equalTo:self.topAnchor, constant:60).isActive = true
-        
-        merchantPaymentIdValue.leftAnchor.constraint(equalTo: self.merchantPaymentIdLabel.rightAnchor).isActive = true;
-        merchantPaymentIdValue.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true;
-        merchantPaymentIdValue.topAnchor.constraint(equalTo: self.topAnchor, constant:60).isActive = true;
-        
         cardIdLabel.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true;
         cardIdLabel.widthAnchor.constraint(equalTo: self.heightAnchor).isActive = true;
-        cardIdLabel.topAnchor.constraint(equalTo:self.topAnchor, constant:85).isActive = true
+        cardIdLabel.topAnchor.constraint(equalTo:self.topAnchor, constant:60).isActive = true
         
         cardIdValue.leftAnchor.constraint(equalTo: self.cardIdLabel.rightAnchor).isActive = true;
         cardIdValue.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true;
-        cardIdValue.topAnchor.constraint(equalTo: self.topAnchor, constant:85).isActive = true;
+        cardIdValue.topAnchor.constraint(equalTo: self.topAnchor, constant:60).isActive = true;
     }
     
     override func layoutSubviews() {
@@ -108,11 +85,6 @@ class ListPaymentsCell: UITableViewCell {
         paymentIdLabel.text = "paymentId: "
         if let paymentId = paymentId {
             paymentIdValue.text = paymentId;
-        }
-        
-        merchantPaymentIdLabel.text = "merchantPaymentId: "
-        if let merchantPaymentId = merchantPaymentId {
-            merchantPaymentIdValue.text = merchantPaymentId;
         }
         
         cardIdLabel.text = "cardId: "

@@ -31,8 +31,8 @@ class ConsultPaymentsController: UIViewController {
         let listPaymentRequest = ListPaymentRequest(startDate: self.startDate.text!,
                                                     finishDate: self.finishDate.text!,
                                                     status:self.status.text,
-                                                    startAmount:Int(self.startAmount.text!),
-                                                    finishAmount:Int(self.finishAmount.text!),
+                                                    startAmount:Double(self.startAmount.text!),
+                                                    finishAmount:Double(self.finishAmount.text!),
                                                     cardId:self.cardId.text,
                                                     pageSize:10,
                                                     page:1);

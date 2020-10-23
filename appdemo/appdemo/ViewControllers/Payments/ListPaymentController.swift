@@ -20,7 +20,6 @@ class ListPaymentsController: UITableViewController {
         
         cell.appTransactionId = data[indexPath.row].appTransactionId;
         cell.paymentId = data[indexPath.row].paymentId;
-        cell.merchantPaymentId = data[indexPath.row].merchantPaymentId;
         cell.cardId = data[indexPath.row].cardId;
         return cell;
     }
