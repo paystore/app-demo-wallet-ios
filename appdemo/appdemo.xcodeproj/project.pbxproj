@@ -13,6 +13,7 @@
 		47141C332530EC4B00F8366D /* ListPaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47141C2E2530EC4B00F8366D /* ListPaymentController.swift */; };
 		47141C342530EC4B00F8366D /* PaymentDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47141C2F2530EC4B00F8366D /* PaymentDetailsController.swift */; };
 		471DEE122540E34F00ABA5E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 471DEE112540E34F00ABA5E9 /* GoogleService-Info.plist */; };
+		59CB1C73AA7B2C1DDCABB66A /* Pods_appdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B070C5BAA3362641D84BD1B0 /* Pods_appdemo.framework */; };
 		5E0212E624EC295200751BE3 /* ListCardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0212E524EC295200751BE3 /* ListCardsController.swift */; };
 		5E0292B924E2F07C00921A33 /* CardholderMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0292B824E2F07C00921A33 /* CardholderMenuController.swift */; };
 		5E032A8624ED5E270017294B /* ListCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E032A8524ED5E270017294B /* ListCardsCell.swift */; };
@@ -116,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59CB1C73AA7B2C1DDCABB66A /* Pods_appdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,8 +34,10 @@ class RemoveCardController: UIViewController {
                 }
             }else{
                 if let error = error {
-                    let alert = Utils.getAlert(title: "Erro", message: error.localizedDescription);
-                    self.present(alert, animated: true, completion: nil);
+                    DispatchQueue.main.async {
+                        let alert = Utils.getAlert(title: "Erro", message: error.localizedDescription);
+                        self.present(alert, animated: true, completion: nil);
+                    }
                 }
             }
         }
