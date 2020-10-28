@@ -54,11 +54,14 @@ class PaymentQRCodeController: UIViewController {
             }else if(failure != nil) {
                 if let generalErrorResponse:GeneralErrorResponse = failure{
                     DispatchQueue.main.async {
-                        print(generalErrorResponse.message)
-                        print(generalErrorResponse.errors)
-                        let alertError = Utils.alertError(timestamp: generalErrorResponse.timestamp as! String, status: String(generalErrorResponse.status), error: generalErrorResponse.error, message: generalErrorResponse.message);
+                        let alertError = Utils.alertError(
+                            timestamp: generalErrorResponse.timestamp as? String ?? String(),
+                            status: String(generalErrorResponse.status),
+                            error: generalErrorResponse.error,
+                            message: generalErrorResponse.message
+                        );
                         
-                        self.present(alertError, animated: true)
+                        self.present(alertError, animated: true);
                     }
                 }
             }else{
