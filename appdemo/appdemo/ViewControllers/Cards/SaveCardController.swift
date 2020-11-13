@@ -18,15 +18,14 @@ class SaveCardController: UIViewController {
         guard !self.cardholderId.text!.isEmpty,
             !self.number.text!.isEmpty,
             !self.cardholderName.text!.isEmpty,
-            !self.dueDate.text!.isEmpty,
-            !self.cvv.text!.isEmpty
+            !self.dueDate.text!.isEmpty
         else {
             let alert = Utils.getAlert(title: "Erro", message: "Campos obrigatórios não preenchidos");
             present(alert, animated: true, completion: nil);
             return;
         }
         
-        let createCardRequest = CreateCardRequest(cardholderId: self.cardholderId.text!, number: self.number.text!, cardholderName:  self.cardholderName.text!, dueDate: self.dueDate.text!, cvv: self.cvv.text!);
+        let createCardRequest = CreateCardRequest(cardholderId: self.cardholderId.text!, number: self.number.text!, cardholderName:  self.cardholderName.text!, dueDate: self.dueDate.text!, cvv: self.cvv.text ?? nil);
         let libServices = WalletApiService(authorization: Utils.getEcommerceToken(), baseUrlWallet: Utils.getBaseUrl());
         
         libServices.saveCard(createCardRequest: createCardRequest){
@@ -41,9 +40,14 @@ class SaveCardController: UIViewController {
             }else if(failure != nil){
                 if let generalErrorResponse:GeneralErrorResponse = failure {
                     DispatchQueue.main.async {
-                        let alertError = Utils.alertError(timestamp: generalErrorResponse.timestamp as! String, status: String(generalErrorResponse.status), error: generalErrorResponse.error, message: generalErrorResponse.message);
-
-                        self.present(alertError, animated: true)
+                        let alertError = Utils.alertError(
+                            timestamp: generalErrorResponse.timestamp as? String ?? String(),
+                            status: String(generalErrorResponse.status),
+                            error: generalErrorResponse.error,
+                            message: generalErrorResponse.message
+                        );
+                        
+                        self.present(alertError, animated: true);
                     }
                 }
             }else{

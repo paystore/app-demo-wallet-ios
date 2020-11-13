@@ -66,4 +66,19 @@ class Utils {
         
         return cardDetails
     }
+    
+    static func showPaymentDetails(payment:CreatePaymentResponse) -> PaymentDetailsController {
+        
+        let storyboard = UIStoryboard(name: "ModalScreen", bundle: .main)
+        
+        let paymentDetails = storyboard.instantiateViewController(withIdentifier: "PaymentDetailsScreen") as! PaymentDetailsController
+        
+        paymentDetails.paymentId = payment.paymentId;
+        paymentDetails.merchantPaymentId = payment.merchantPaymentId;
+        paymentDetails.paymentDateTime = payment.paymentDateTime;
+        paymentDetails.authorizationCode = payment.authorizationCode;
+        
+        return paymentDetails
+    }
+
 }

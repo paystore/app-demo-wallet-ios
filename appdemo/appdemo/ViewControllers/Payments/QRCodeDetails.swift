@@ -29,6 +29,7 @@ class QRCodeDetails: UIViewController {
     @IBOutlet weak var paymentInstallments: UILabel!
     @IBOutlet weak var transactionType: UILabel!
     @IBOutlet weak var crc: UILabel!
+    @IBOutlet weak var merchantTransactionId: UILabel!
     
     
     func setupView(){
@@ -53,6 +54,7 @@ class QRCodeDetails: UIViewController {
         self.paymentInstallments.text = qrcode.transactionInformation.paymentInstallments;
         self.transactionType.text = qrcode.transactionInformation.transactionType;
         self.crc.text = qrcode.crc;
+        self.merchantTransactionId.text = qrcode.transactionInformation.merchantTransactionId;
         
     }
 }

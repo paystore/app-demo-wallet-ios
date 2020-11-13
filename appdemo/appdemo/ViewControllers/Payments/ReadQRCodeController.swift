@@ -5,10 +5,11 @@ import libwallet
 class ReadQRCodeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
-        qrcodeData.text = "00020101021226440008PayStore0116123456789012000102082009130352040000530398654120000000001005802BR5909SENFFCARD6011CURITIBA PR 801050037\"https://www.senffcard.com.br/qrcode\"011613050329197F190A0212150518113349030410000404000105020006020163049872";
+        qrcodeData.text = self.qrcodeDataString;
     }
     
     var qrcodeInfo:Any = ();
+    var qrcodeDataString = String();
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "qrcodeDetails" {
@@ -17,7 +18,7 @@ class ReadQRCodeController: UIViewController {
         }
     }
     
-    @IBOutlet weak var qrcodeData: UITextField!
+    @IBOutlet weak var qrcodeData: UILabel!
     @IBAction func read(_ sender: Any) {
         guard !self.qrcodeData.text!.isEmpty else {
             let alert = Utils.getAlert(title: "Erro", message: "Campos obrigatórios não preenchidos");
